@@ -6,7 +6,7 @@ import XCTest
 public class NimbleXCTestHandler: AssertionHandler {
     public func assert(_ assertion: Bool, message: FailureMessage, location: SourceLocation) {
         if !assertion {
-            recordFailure("\(message.stringValue)\n", location: location)
+            recordFailure("\(message.stringValue)", location: location)
         }
     }
 }
